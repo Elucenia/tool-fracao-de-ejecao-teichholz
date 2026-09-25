@@ -1,0 +1,37 @@
+[
+  {
+    "label": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+    "input": {
+      "ddve": 5,
+      "dsve": 3.2
+    },
+    "expected": {
+      "raw": {
+        "edv": 118.24,
+        "ef": 65.4,
+        "fs": 36
+      },
+      "tol": 0.1
+    },
+    "originalInput": {
+      "ddve": 5,
+      "dsve": 3.2
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "DSVE maior que DDVE: recusa com aviso de erro",
+    "input": {
+      "ddve": 4,
+      "dsve": 4.5
+    },
+    "expected": {
+      "error": true
+    },
+    "originalInput": {
+      "ddve": 4,
+      "dsve": 4.5
+    },
+    "expandedZeroOptions": []
+  }
+]
