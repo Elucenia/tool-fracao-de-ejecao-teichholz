@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-fracao-de-ejecao-teichholz",
   "version": "0.1.0",
-  "description": "Fração de ejeção (Teichholz) e encurtamento · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Fração de ejeção (Teichholz) e encurtamento · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
