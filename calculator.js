@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-fracao-de-ejecao-teichholz · Elucenia · https://github.com/Elucenia/tool-fracao-de-ejecao-teichholz
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"fracao-de-ejecao-teichholz","title":"Fração de ejeção (Teichholz) e encurtamento","fields":[["ddve","Diâmetro diastólico do VE","num",{"min":2,"max":9,"step":"0.01","unit":"cm","ph":"5,0"}],["dsve","Diâmetro sistólico do VE","num",{"min":1,"max":8,"step":"0.01","unit":"cm","ph":"3,2"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
