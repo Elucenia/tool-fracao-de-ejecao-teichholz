@@ -1,0 +1,73 @@
+<!-- ELUCENIA technical documentation · fracao-de-ejecao-teichholz · ar · no clinical/professional/rights approval -->
+
+# الكسر القذفي (Teichholz) والتقصّر الكسري
+
+[الشروط والمصادر والأذونات](https://elucenia.org/ar/tools/fracao-de-ejecao-teichholz)
+
+## كيفية الاستخدام
+
+استخدم الأداة في البوابة أو افتح index.html عبر خادم HTTP محلي. اختر اللغة، وأكمل الحقول، ثم أجرِ الحساب.
+
+## المدخلات والوحدات
+
+### قطر البطين الأيسر في نهاية الانبساط
+
+`ddve`
+
+cm · النطاق: ٢–٩
+
+### قطر البطين الأيسر في نهاية الانقباض
+
+`dsve`
+
+cm · النطاق: ١–٨
+
+## إصدار الطريقة
+
+Teichholz 1976: 7 D³/(2.4+D)؛ كسر قذفي وأحجام من أبعاد خطية؛ سياق ASE/EACVI 2015 وحدود هندسية
+
+## المعادلة الموثقة
+
+الحجم (Teichholz) = 7 ÷ (2.4 + D) × D³ (D بوحدة cm والحجم بوحدة mL)
+
+الكسر القذفي = (حجم نهاية الانبساط − حجم نهاية الانقباض) ÷ حجم نهاية الانبساط × 100
+
+كسر التقصّر = (قطر البطين في نهاية الانبساط − قطر البطين في نهاية الانقباض) ÷ قطر البطين في نهاية الانبساط × 100
+
+## الحدود والفئة السكانية
+
+يعتمد تقدير Teichholz على العلاقة الهندسية بين قطر البطين وحجمه. في الدراسة الأصلية، كان التوافق جيدًا عند غياب اللاتآزر وضعيفًا عند وجوده. يستدعي المرض التاجي المصحوب باحتمال اضطراب حركي موضعي الحذر؛ ولا يحل الجزء القذفي المحسوب من قطر واحد محل الطرق الملائمة لهندسة البطين.
+
+## المراجع
+
+- [Teichholz LE et al. Problems in echocardiographic volume determinations: echocardiographic-angiographic correlations in the presence or absence of asynergy. Am J Cardiol, 1976.](https://doi.org/10.1016/0002-9149(76)90491-4)
+
+- [Lang RM et al. Recommendations for cardiac chamber quantification by echocardiography in adults (ASE/EACVI). J Am Soc Echocardiogr, 2015.](https://doi.org/10.1016/j.echo.2014.10.003)
+
+- [McDonagh TA et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur Heart J, 2021.](https://doi.org/10.1093/eurheartj/ehab368)
+
+## إعادة إجراء الاختبارات التقنية
+
+شغّل node test.cjs في المجلد الجذري لهذا المستودع لتكرار الحالات الاصطناعية المسجلة. تُحفظ المدخلات والنتائج المتوقعة وحدود التفاوت الأصلية. لا تُعدّ الاختبارات التقنية تحققًا سريريًا.
+
+```sh
+node test.cjs
+```
+
+يحتوي tool.json على المصادر والإصدار ونطاق المراجعة. يحتفظ examples.json بالمدخلات والنتائج المتوقعة للحالات الاصطناعية؛ ويسجل results.json النتائج التي تم الحصول عليها.
+
+[السجل والمراجع](../tool.json) · [شيفرة JavaScript](../calculator.js) · [حالات مرجعية](../examples.json) · [results.json](../results.json)
+
+## المراجعة وشروط الاستخدام
+
+لم تُجرَ مراجعة سريرية مستقلة.
+
+هذه الواجهة ترجمة أعدّها مؤلفوها، وليست إصدارًا رسميًا أو معتمدًا. لم تُجرَ مراجعة سريرية مستقلة أو مراجعة لغوية مهنية، ولم تُستكمل الموافقة على حقوق استخدام الأدوات.
+
+نتيجة المعادلة أو التصنيف. يعتمد التفسير والتصرف ومدى الانطباق على التقييم المهني والمصدر المحدد.
+
+## الترخيص ونسبة العمل إلى أصحابه
+
+ينطبق Apache-2.0 على كود ELUCENIA فقط. تبقى حقوق الأدوات والمنشورات والترجمات والبيانات لأصحابها المعنيين. احتفظ بملفّي LICENSE وNOTICE.
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

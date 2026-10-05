@@ -1,0 +1,276 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ddve",
+    "input": {
+      "dsve": 3.2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ddve",
+    "input": {
+      "ddve": "",
+      "dsve": 3.2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ddve",
+    "input": {
+      "ddve": "NaN",
+      "dsve": 3.2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ddve",
+    "input": {
+      "ddve": "Infinity",
+      "dsve": 3.2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ddve",
+    "input": {
+      "ddve": "1e309",
+      "dsve": 3.2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ddve",
+    "input": {
+      "ddve": "invalid",
+      "dsve": 3.2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ddve",
+    "input": {
+      "ddve": {},
+      "dsve": 3.2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ddve",
+    "input": {
+      "ddve": true,
+      "dsve": 3.2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ddve",
+    "input": {
+      "ddve": 1,
+      "dsve": 3.2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ddve",
+    "input": {
+      "ddve": 10,
+      "dsve": 3.2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field dsve",
+    "input": {
+      "ddve": 5
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "dsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field dsve",
+    "input": {
+      "ddve": 5,
+      "dsve": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "dsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" dsve",
+    "input": {
+      "ddve": 5,
+      "dsve": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" dsve",
+    "input": {
+      "ddve": 5,
+      "dsve": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" dsve",
+    "input": {
+      "ddve": 5,
+      "dsve": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" dsve",
+    "input": {
+      "ddve": 5,
+      "dsve": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} dsve",
+    "input": {
+      "ddve": 5,
+      "dsve": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true dsve",
+    "input": {
+      "ddve": 5,
+      "dsve": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum dsve",
+    "input": {
+      "ddve": 5,
+      "dsve": 0
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "dsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum dsve",
+    "input": {
+      "ddve": 5,
+      "dsve": 9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "dsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

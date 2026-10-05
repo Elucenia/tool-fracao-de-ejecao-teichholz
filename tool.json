@@ -3,12 +3,13 @@
     "id": "fracao-de-ejecao-teichholz",
     "title": "Fração de ejeção (Teichholz) e encurtamento",
     "short": "A partir dos diâmetros do VE",
+    "desc": "Calcule os volumes do VE e a fração de ejeção pelo método de Teichholz e a fração de encurtamento a partir dos diâmetros diastólico e sistólico.",
+    "lead": "Estima volumes, fração de ejeção (Teichholz) e fração de encurtamento a partir dos diâmetros do ventrículo esquerdo.",
+    "kind": "Calculadora",
     "spec": [
       "cardiologia",
       "radiologia-e-diagnostico-por-imagem"
     ],
-    "desc": "Calcule os volumes do VE e a fração de ejeção pelo método de Teichholz e a fração de encurtamento a partir dos diâmetros diastólico e sistólico.",
-    "lead": "Estima volumes, fração de ejeção (Teichholz) e fração de encurtamento a partir dos diâmetros do ventrículo esquerdo.",
     "fields": [
       [
         "ddve",
@@ -36,31 +37,6 @@
       ]
     ],
     "formula": "<ul><li><strong>Volume (Teichholz)</strong> = 7 ÷ (2,4 + D) × D³ (D em cm, volume em mL)</li><li><strong>Fração de ejeção</strong> = (VDF − VSF) ÷ VDF × 100</li><li><strong>Fração de encurtamento</strong> = (DDVE − DSVE) ÷ DDVE × 100</li></ul>",
-    "table": [
-      [
-        "Fração de ejeção",
-        "Classificação (IC, ESC 2021)"
-      ],
-      [
-        "≥ 50%",
-        "Preservada"
-      ],
-      [
-        "41 a 49%",
-        "Levemente reduzida"
-      ],
-      [
-        "≤ 40%",
-        "Reduzida"
-      ]
-    ],
-    "table_note": "Normal pela ASE 2015 (método de Simpson): 52 a 72% nos homens e 54 a 74% nas mulheres. Fração de encurtamento normal: 25 a 43%.",
-    "tips": [
-      "A ASE <strong>não recomenda</strong> Teichholz para a fração de ejeção na prática clínica: com alterações segmentares, o método erra. Prefira Simpson biplanar ou 3D.",
-      "Use Teichholz como checagem rápida em ventrículos sem alteração segmentar, ou quando a janela apical é ruim.",
-      "Meça os diâmetros no mesmo nível e perpendicular ao eixo longo; o diâmetro sistólico no menor tamanho da cavidade.",
-      "Complete a avaliação sistólica com o strain longitudinal global (GLS), mais sensível para disfunção inicial."
-    ],
     "sources": [
       [
         "Teichholz LE et al. Problems in echocardiographic volume determinations: echocardiographic-angiographic correlations in the presence or absence of asynergy. Am J Cardiol, 1976.",
@@ -102,9 +78,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -113,17 +86,193 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T13:01:58.037Z",
+      "total": 89,
+      "passed": 89,
+      "evidencePath": "reports/review-20261003/four-linear-volume-source-oracles-final23.json",
+      "evidenceSha256": "7e5cc71340a2edf4506eee3a49c2c6fcc7a71cc73d2002cc57afdc928637ce5d",
+      "peerEvidencePath": "reports/review-20261003/independent-four-linear-volume-source-oracles-final23.json",
+      "peerEvidenceSha256": "aa29f261bf43be7f7f285898bce5ae671883847d5c3b9171793d372d1eecf31e",
+      "scope": "Arithmetic equation only, with source-version limits recorded. No approval of input clinical classification, thresholds, predictions, translations, rights or release.",
+      "source": {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1244736/",
+        "edition": "Teichholz1976, DOI10.1016/0002-9149(76)90491-4",
+        "locator": "Original indexed abstract equation and asynergy limitation",
+        "access": "Primary indexed original abstract read2026-10-04; direct page retrieval yielded only footer. Original equation identifies7D³/(2.4+D); paper reports poor volume correlation in12 patients with asynergy. Tests independently check geometric volumes, percent ejection and fractional shortening only. No clinical suitability or imaging protocol approval.",
+        "numericScope": "Rational BigInt reference evaluates exact decimal diameters independently. A16×Number.EPSILON×max(1,abs(reference)) floating round-off envelope is used only for these new raw arithmetic cases; original source fixtures and tolerances remain unchanged."
+      },
+      "implementations": [
+        {
+          "app": "website",
+          "id": "fracao-de-ejecao-teichholz",
+          "sha256": "b13dc8f370372b1485edee127af68df4bdbdc92c048a48e41cc58bebbf5f411c"
+        },
+        {
+          "app": "dashboard",
+          "id": "fracao-de-ejecao-teichholz",
+          "sha256": "b13dc8f370372b1485edee127af68df4bdbdc92c048a48e41cc58bebbf5f411c"
+        },
+        {
+          "app": "command-center",
+          "id": "fracao-de-ejecao-teichholz",
+          "sha256": "b13dc8f370372b1485edee127af68df4bdbdc92c048a48e41cc58bebbf5f411c"
+        }
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Teichholz 1976:7 D³/(2,4+D); FE evolumeslineares; contexto ASEEACVI 2015 e limitaçõesgeometria",
+    "implementationVersion": "fracao-de-ejecao-teichholz@native-2026-10-03+b13dc8f37037",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/1244736/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Volume (Teichholz) = 7 ÷ (2,4 + D) × D³ (D em cm, volume em mL) Fração de ejeção = (VDF − VSF) ÷ VDF × 100 Fração de encurtamento = (DDVE − DSVE) ÷ DDVE × 100",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "ddve",
+            "label": "Diâmetro diastólico do VE",
+            "type": "num",
+            "min": 2,
+            "max": 9,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dsve",
+            "label": "Diâmetro sistólico do VE",
+            "type": "num",
+            "min": 1,
+            "max": 8,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "f886774f9a57ce1ef3b96d8fe2d07a8dcf2ab9643cfb796bb0193ea2e3f2045b"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Teichholz LE et al. Problems in echocardiographic volume determinations: echocardiographic-angiographic correlations in the presence or absence of asynergy. Am J Cardiol, 1976.",
+          "url": "https://doi.org/10.1016/0002-9149(76)90491-4",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Problems in echocardiographic volume determinations: echocardiographic-angiographic correlations in the presence of absence of asynergy.",
+            "year": "1976",
+            "firstPublicationDate": "1976-01-01",
+            "doi": "10.1016/0002-9149(76)90491-4",
+            "pmid": "1244736",
+            "journal": "The American journal of cardiology",
+            "authors": "Teichholz LE, Kreulen T, Herman MV, Gorlin R."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/1244736/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "92ff3af647e8cf4a2bcd6aa181914c1ee4350d46e4ec27e72ea813c2aba70094",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Lang RM et al. Recommendations for cardiac chamber quantification by echocardiography in adults (ASE/EACVI). J Am Soc Echocardiogr, 2015.",
+          "url": "https://doi.org/10.1016/j.echo.2014.10.003",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Recommendations for cardiac chamber quantification by echocardiography in adults: an update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging.",
+            "year": "2015",
+            "firstPublicationDate": "2015-01-01",
+            "doi": "10.1016/j.echo.2014.10.003",
+            "pmid": "25559473",
+            "journal": "Journal of the American Society of Echocardiography : official publication of the American Society of Echocardiography",
+            "authors": "Lang RM, Badano LP, Mor-Avi V, Afilalo J, Armstrong A, Ernande L, Flachskampf FA, Foster E, Goldstein SA, Kuznetsova T, Kuznetsova T, Lancellotti P, Muraru D, Picard MH, Rietzschel ER, Rudski L, Spencer KT, Tsang W, Voigt JU."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/25559473/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "887dd5122e2db8d1a30f98a5e51f719631d1e8045655442e84b77aac65c02c54",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "McDonagh TA et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur Heart J, 2021.",
+          "url": "https://doi.org/10.1093/eurheartj/ehab368",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure.",
+            "year": "2021",
+            "firstPublicationDate": "2021-09-01",
+            "doi": "10.1093/eurheartj/ehab368",
+            "pmid": "34447992",
+            "journal": "European heart journal",
+            "authors": "McDonagh TA, Metra M, Adamo M, Gardner RS, Baumbach A, Böhm M, Burri H, Butler J, Čelutkienė J, Chioncel O, Cleland JGF, Coats AJS, Crespo-Leiro MG, Farmakis D, Gilard M, Heymans S, Hoes AW, Jaarsma T, Jankowska EA, Lainscak M, Lam CSP, Lyon AR, McMurray JJV, Mebazaa A, Mindham R, Muneretto C, Francesco Piepoli M, Price S, Rosano GMC, Ruschitzka F, Kathrine Skibelund A, ESC Scientific Document Group."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/34447992/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T13:01:58.037Z",
+        "total": 89,
+        "passed": 89,
+        "evidencePath": "reports/review-20261003/four-linear-volume-source-oracles-final23.json",
+        "scope": "Arithmetic equation only, with source-version limits recorded. No approval of input clinical classification, thresholds, predictions, translations, rights or release.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "337a4063dc783c2b7209ff69dd45945024440eb0a56acf95105ea250362fc210"
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "b13dc8f370372b1485edee127af68df4bdbdc92c048a48e41cc58bebbf5f411c"
+    },
+    "limits": "A estimativa de Teichholz depende da relação geométrica entre diâmetro e volume ventricular. No estudo original, a concordância foi boa sem assinergia e ruim quando havia assinergia. Doença coronariana com possível alteração regional exige cautela; a fração calculada por um diâmetro não substitui métodos apropriados à geometria ventricular.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.972Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não apresenta toda técnica de diâmetro, unidade e equação. Geometria adequada é uma condição do modelo, não diagnóstico pelo número isolado."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/fracao-de-ejecao-teichholz/calculator.js",
+    "bytes": 5157,
+    "sha256": "b13dc8f370372b1485edee127af68df4bdbdc92c048a48e41cc58bebbf5f411c"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "e02114a18ba03f9d8e03515a31f51b46db2278c0a4821734ff218c141ed1269d",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 89,
+      "sha256": "3c5d668604f40c49d5d4c032dc91aa86769881fa5d3e3501e496c7e66033bde0",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

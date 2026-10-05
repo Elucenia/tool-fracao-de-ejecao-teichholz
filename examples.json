@@ -1,6 +1,13 @@
 [
   {
-    "label": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+    "id": "fracao-de-ejecao-teichholz",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+    "originalInput": {
+      "ddve": 5,
+      "dsve": 3.2
+    },
     "input": {
       "ddve": 5,
       "dsve": 3.2
@@ -13,14 +20,37 @@
       },
       "tol": 0.1
     },
-    "originalInput": {
-      "ddve": 5,
-      "dsve": 3.2
+    "recordedResult": {
+      "main": [
+        "65",
+        "%"
+      ],
+      "label": "Fração de ejeção (Teichholz)",
+      "raw": {
+        "edv": 118.24324324324324,
+        "esv": 40.96000000000001,
+        "ef": 65.35954285714286,
+        "fs": 36
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "DSVE maior que DDVE: recusa com aviso de erro",
+    "id": "fracao-de-ejecao-teichholz",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "DSVE maior que DDVE: recusa com aviso de erro",
+    "originalInput": {
+      "ddve": 4,
+      "dsve": 4.5
+    },
     "input": {
       "ddve": 4,
       "dsve": 4.5
@@ -28,10 +58,16 @@
     "expected": {
       "error": true
     },
-    "originalInput": {
-      "ddve": 4,
-      "dsve": 4.5
+    "recordedResult": {
+      "error": "O diâmetro sistólico precisa ser menor que o diastólico."
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

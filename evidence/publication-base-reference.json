@@ -1,0 +1,88 @@
+{
+  "id": "fracao-de-ejecao-teichholz",
+  "repository": "Elucenia/tool-fracao-de-ejecao-teichholz",
+  "branch": "main",
+  "commit": "da7da3c2d68d101551bfbc553d7a087506b06927",
+  "archiveSha256": "360fea8acd8cf430c40a662439e8d22257a0565071906697ee765b277a8fd916",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3371,
+      "sha": "cdd3805fe208dc907de2d065b1b322a2d1255d32",
+      "sha256": "620c1ed7ea68881b10e74715e70cbf77b048f3cc35cc5c7c1cbb6a6cbea7bc68"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 977,
+      "sha": "f0288d451771da3213bc524dd10c9d4b5fe2e7b1",
+      "sha256": "604bc10f5a21364f5a894aa0fa62d16a91d3fc908ae7bee70d8026bcf24618b0"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1477,
+      "sha": "3984d63ea626c94d94101b6a4e04af02b7acfde9",
+      "sha256": "94a51684b1adb93f392c8bdd4f40f47a151ba851ec3ba5c73e05d00082105b12"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1678,
+      "sha": "17ff3c97fe4f50ba079b11ecea5e33392ec2de32",
+      "sha256": "69c45a341d4904050ce01e60f7e842f532c3fc43f3ee992e98c80926395232a5"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}

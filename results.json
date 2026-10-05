@@ -1,0 +1,169 @@
+{
+  "id": "fracao-de-ejecao-teichholz",
+  "at": "2026-10-05T17:29:34.738Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/fracao-de-ejecao-teichholz/calculator.js",
+    "bytes": 5157,
+    "sha256": "b13dc8f370372b1485edee127af68df4bdbdc92c048a48e41cc58bebbf5f411c"
+  },
+  "cases": [
+    {
+      "name": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+      "input": {
+        "ddve": 5,
+        "dsve": 3.2
+      },
+      "obtained": {
+        "id": "fracao-de-ejecao-teichholz",
+        "main": [
+          "65",
+          "%"
+        ],
+        "label": "Fração de ejeção (Teichholz)",
+        "raw": {
+          "edv": 118.24324324324324,
+          "esv": 40.96000000000001,
+          "ef": 65.35954285714286,
+          "fs": 36
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.edv",
+          "expected": 118.24,
+          "obtained": 118.24324324324324,
+          "tolerance": 0.1,
+          "difference": 0.003243243243247207,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.ef",
+          "expected": 65.4,
+          "obtained": 65.35954285714286,
+          "tolerance": 0.1,
+          "difference": 0.040457142857150075,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.fs",
+          "expected": 36,
+          "obtained": 36,
+          "tolerance": 0.1,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.edv",
+          "expected": 118.24324324324324,
+          "obtained": 118.24324324324324,
+          "tolerance": 1.1824324324324323e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.esv",
+          "expected": 40.96000000000001,
+          "obtained": 40.96000000000001,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ef",
+          "expected": 65.35954285714286,
+          "obtained": 65.35954285714286,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.fs",
+          "expected": 36,
+          "obtained": 36,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "65",
+          "obtained": "65",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "%",
+          "obtained": "%",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "DSVE maior que DDVE: recusa com aviso de erro",
+      "input": {
+        "ddve": 4,
+        "dsve": 4.5
+      },
+      "obtained": {
+        "error": "O diâmetro sistólico precisa ser menor que o diastólico.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "checks": [
+        {
+          "at": "recorded-rejection",
+          "expected": "4xx with error and no result",
+          "obtained": {
+            "status": 422,
+            "error": "O diâmetro sistólico precisa ser menor que o diastólico.",
+            "result": false
+          },
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 24,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}
