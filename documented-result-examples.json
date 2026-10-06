@@ -1,0 +1,785 @@
+{
+  "id": "fracao-de-ejecao-teichholz",
+  "implementationVersion": "fracao-de-ejecao-teichholz@native-2026-10-05+07b2d2085bc4",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Volume diastólico final",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "118 mL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volume sistólico final",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "41 mL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Volume sistólico",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "77 mL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Fração de encurtamento",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "36%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Fração de ejeção preservada",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "End-diastolic volume",
+                "locale": "en",
+                "template": "documented-authored-d02b58c8a3a94a0a9b51"
+              },
+              "value": {
+                "text": "118 mL",
+                "locale": "en",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  118
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "End-systolic volume",
+                "locale": "en",
+                "template": "documented-authored-3c29a613ea046d2b1483"
+              },
+              "value": {
+                "text": "41 mL",
+                "locale": "en",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  41
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Stroke volume",
+                "locale": "en",
+                "template": "documented-authored-990c1779ba9402bbd3a8"
+              },
+              "value": {
+                "text": "77 mL",
+                "locale": "en",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  77
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Fractional shortening",
+                "locale": "en",
+                "template": "documented-authored-1b079eef2ae727362609"
+              },
+              "value": {
+                "text": "36%",
+                "locale": "en",
+                "template": "documented-authored-84f501a5755ff5f2cb76",
+                "sourceNumbers": [
+                  36
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Preserved ejection fraction",
+            "locale": "en",
+            "template": "documented-authored-5c2b4a73db218ecbfd33"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Volumen telediastólico",
+                "locale": "es",
+                "template": "documented-authored-d02b58c8a3a94a0a9b51"
+              },
+              "value": {
+                "text": "118 mL",
+                "locale": "es",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  118
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volumen telesistólico",
+                "locale": "es",
+                "template": "documented-authored-3c29a613ea046d2b1483"
+              },
+              "value": {
+                "text": "41 mL",
+                "locale": "es",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  41
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Volumen sistólico",
+                "locale": "es",
+                "template": "documented-authored-990c1779ba9402bbd3a8"
+              },
+              "value": {
+                "text": "77 mL",
+                "locale": "es",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  77
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Fracción de acortamiento",
+                "locale": "es",
+                "template": "documented-authored-1b079eef2ae727362609"
+              },
+              "value": {
+                "text": "36%",
+                "locale": "es",
+                "template": "documented-authored-84f501a5755ff5f2cb76",
+                "sourceNumbers": [
+                  36
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Fracción de eyección preservada",
+            "locale": "es",
+            "template": "documented-authored-5c2b4a73db218ecbfd33"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Volume télédiastolique",
+                "locale": "fr",
+                "template": "documented-authored-d02b58c8a3a94a0a9b51"
+              },
+              "value": {
+                "text": "118 mL",
+                "locale": "fr",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  118
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volume télésystolique",
+                "locale": "fr",
+                "template": "documented-authored-3c29a613ea046d2b1483"
+              },
+              "value": {
+                "text": "41 mL",
+                "locale": "fr",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  41
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Volume systolique",
+                "locale": "fr",
+                "template": "documented-authored-990c1779ba9402bbd3a8"
+              },
+              "value": {
+                "text": "77 mL",
+                "locale": "fr",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  77
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Fraction de raccourcissement",
+                "locale": "fr",
+                "template": "documented-authored-1b079eef2ae727362609"
+              },
+              "value": {
+                "text": "36%",
+                "locale": "fr",
+                "template": "documented-authored-84f501a5755ff5f2cb76",
+                "sourceNumbers": [
+                  36
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Fraction d’éjection préservée",
+            "locale": "fr",
+            "template": "documented-authored-5c2b4a73db218ecbfd33"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Enddiastolisches Volumen",
+                "locale": "de",
+                "template": "documented-authored-d02b58c8a3a94a0a9b51"
+              },
+              "value": {
+                "text": "118 mL",
+                "locale": "de",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  118
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Endsystolisches Volumen",
+                "locale": "de",
+                "template": "documented-authored-3c29a613ea046d2b1483"
+              },
+              "value": {
+                "text": "41 mL",
+                "locale": "de",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  41
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Schlagvolumen",
+                "locale": "de",
+                "template": "documented-authored-990c1779ba9402bbd3a8"
+              },
+              "value": {
+                "text": "77 mL",
+                "locale": "de",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  77
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Verkürzungsfraktion",
+                "locale": "de",
+                "template": "documented-authored-1b079eef2ae727362609"
+              },
+              "value": {
+                "text": "36%",
+                "locale": "de",
+                "template": "documented-authored-84f501a5755ff5f2cb76",
+                "sourceNumbers": [
+                  36
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Erhaltene Ejektionsfraktion",
+            "locale": "de",
+            "template": "documented-authored-5c2b4a73db218ecbfd33"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Volume telediastolico",
+                "locale": "it",
+                "template": "documented-authored-d02b58c8a3a94a0a9b51"
+              },
+              "value": {
+                "text": "118 mL",
+                "locale": "it",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  118
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volume telesistolico",
+                "locale": "it",
+                "template": "documented-authored-3c29a613ea046d2b1483"
+              },
+              "value": {
+                "text": "41 mL",
+                "locale": "it",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  41
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Volume sistolico",
+                "locale": "it",
+                "template": "documented-authored-990c1779ba9402bbd3a8"
+              },
+              "value": {
+                "text": "77 mL",
+                "locale": "it",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  77
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Frazione di accorciamento",
+                "locale": "it",
+                "template": "documented-authored-1b079eef2ae727362609"
+              },
+              "value": {
+                "text": "36%",
+                "locale": "it",
+                "template": "documented-authored-84f501a5755ff5f2cb76",
+                "sourceNumbers": [
+                  36
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frazione di eiezione preservata",
+            "locale": "it",
+            "template": "documented-authored-5c2b4a73db218ecbfd33"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الحجم الانبساطي النهائي",
+                "locale": "ar",
+                "template": "documented-authored-d02b58c8a3a94a0a9b51"
+              },
+              "value": {
+                "text": "١١٨ مل",
+                "locale": "ar",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  118
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الحجم الانقباضي النهائي",
+                "locale": "ar",
+                "template": "documented-authored-3c29a613ea046d2b1483"
+              },
+              "value": {
+                "text": "٤١ مل",
+                "locale": "ar",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  41
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "حجم الضربة",
+                "locale": "ar",
+                "template": "documented-authored-990c1779ba9402bbd3a8"
+              },
+              "value": {
+                "text": "٧٧ مل",
+                "locale": "ar",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  77
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "نسبة التقصير",
+                "locale": "ar",
+                "template": "documented-authored-1b079eef2ae727362609"
+              },
+              "value": {
+                "text": "٣٦%",
+                "locale": "ar",
+                "template": "documented-authored-84f501a5755ff5f2cb76",
+                "sourceNumbers": [
+                  36
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الكسر القذفي محفوظ",
+            "locale": "ar",
+            "template": "documented-authored-5c2b4a73db218ecbfd33"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "舒张末期容积",
+                "locale": "zh",
+                "template": "documented-authored-d02b58c8a3a94a0a9b51"
+              },
+              "value": {
+                "text": "118 mL",
+                "locale": "zh",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  118
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "收缩末期容积",
+                "locale": "zh",
+                "template": "documented-authored-3c29a613ea046d2b1483"
+              },
+              "value": {
+                "text": "41 mL",
+                "locale": "zh",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  41
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "每搏量",
+                "locale": "zh",
+                "template": "documented-authored-990c1779ba9402bbd3a8"
+              },
+              "value": {
+                "text": "77 mL",
+                "locale": "zh",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  77
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "缩短分数",
+                "locale": "zh",
+                "template": "documented-authored-1b079eef2ae727362609"
+              },
+              "value": {
+                "text": "36%",
+                "locale": "zh",
+                "template": "documented-authored-84f501a5755ff5f2cb76",
+                "sourceNumbers": [
+                  36
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "射血分数保留",
+            "locale": "zh",
+            "template": "documented-authored-5c2b4a73db218ecbfd33"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "拡張末期容積",
+                "locale": "ja",
+                "template": "documented-authored-d02b58c8a3a94a0a9b51"
+              },
+              "value": {
+                "text": "118 mL",
+                "locale": "ja",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  118
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "収縮末期容積",
+                "locale": "ja",
+                "template": "documented-authored-3c29a613ea046d2b1483"
+              },
+              "value": {
+                "text": "41 mL",
+                "locale": "ja",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  41
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "一回拍出量",
+                "locale": "ja",
+                "template": "documented-authored-990c1779ba9402bbd3a8"
+              },
+              "value": {
+                "text": "77 mL",
+                "locale": "ja",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  77
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "短縮率",
+                "locale": "ja",
+                "template": "documented-authored-1b079eef2ae727362609"
+              },
+              "value": {
+                "text": "36%",
+                "locale": "ja",
+                "template": "documented-authored-84f501a5755ff5f2cb76",
+                "sourceNumbers": [
+                  36
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "駆出率保たれている",
+            "locale": "ja",
+            "template": "documented-authored-5c2b4a73db218ecbfd33"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अंत-डायस्टोलिक आयतन",
+                "locale": "hi",
+                "template": "documented-authored-d02b58c8a3a94a0a9b51"
+              },
+              "value": {
+                "text": "118 mL",
+                "locale": "hi",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  118
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अंत-सिस्टोलिक आयतन",
+                "locale": "hi",
+                "template": "documented-authored-3c29a613ea046d2b1483"
+              },
+              "value": {
+                "text": "41 mL",
+                "locale": "hi",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  41
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "स्ट्रोक वॉल्यूम",
+                "locale": "hi",
+                "template": "documented-authored-990c1779ba9402bbd3a8"
+              },
+              "value": {
+                "text": "77 mL",
+                "locale": "hi",
+                "template": "documented-authored-771b3f04a5165ecefb10",
+                "sourceNumbers": [
+                  77
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "संक्षेपण अंश",
+                "locale": "hi",
+                "template": "documented-authored-1b079eef2ae727362609"
+              },
+              "value": {
+                "text": "36%",
+                "locale": "hi",
+                "template": "documented-authored-84f501a5755ff5f2cb76",
+                "sourceNumbers": [
+                  36
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "संरक्षित इजेक्शन फ्रैक्शन",
+            "locale": "hi",
+            "template": "documented-authored-5c2b4a73db218ecbfd33"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

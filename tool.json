@@ -125,7 +125,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Teichholz 1976:7 D³/(2,4+D); FE evolumeslineares; contexto ASEEACVI 2015 e limitaçõesgeometria",
-    "implementationVersion": "fracao-de-ejecao-teichholz@native-2026-10-03+b13dc8f37037",
+    "implementationVersion": "fracao-de-ejecao-teichholz@native-2026-10-05+07b2d2085bc4",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/1244736/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -242,7 +242,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "b13dc8f370372b1485edee127af68df4bdbdc92c048a48e41cc58bebbf5f411c"
+      "implementationHash": "07b2d2085bc48069d4e6cb1a6cc8c31cd76be283f7b0565771286a6840064773",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "fracao-de-ejecao-teichholz@native-2026-10-03+b13dc8f37037",
+          "previousImplementationHash": "b13dc8f370372b1485edee127af68df4bdbdc92c048a48e41cc58bebbf5f411c",
+          "implementationHash": "07b2d2085bc48069d4e6cb1a6cc8c31cd76be283f7b0565771286a6840064773",
+          "scientificBodySha256": "43fea165fc91d2f470885bb4a53348d8ec49990a36b70abb68ca97c6ae3a22fa",
+          "metadataContractHash": "f886774f9a57ce1ef3b96d8fe2d07a8dcf2ab9643cfb796bb0193ea2e3f2045b",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A estimativa de Teichholz depende da relação geométrica entre diâmetro e volume ventricular. No estudo original, a concordância foi boa sem assinergia e ruim quando havia assinergia. Doença coronariana com possível alteração regional exige cautela; a fração calculada por um diâmetro não substitui métodos apropriados à geometria ventricular.",
     "sourceLimitEvidence": {
@@ -261,15 +289,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/fracao-de-ejecao-teichholz/calculator.js",
-    "bytes": 5157,
-    "sha256": "b13dc8f370372b1485edee127af68df4bdbdc92c048a48e41cc58bebbf5f411c"
+    "bytes": 5362,
+    "sha256": "07b2d2085bc48069d4e6cb1a6cc8c31cd76be283f7b0565771286a6840064773"
   },
-  "sourceToolSha256": "e02114a18ba03f9d8e03515a31f51b46db2278c0a4821734ff218c141ed1269d",
+  "sourceToolSha256": "0cee350208134ea89f5b347d34cdfe2197d88e5ab74e4451e8adb305152c8af7",
   "omittedFullReferenceBanks": [
     {
       "rows": 89,
       "sha256": "3c5d668604f40c49d5d4c032dc91aa86769881fa5d3e3501e496c7e66033bde0",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

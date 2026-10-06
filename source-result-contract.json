@@ -1,0 +1,109 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "fracao-de-ejecao-teichholz",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "4a23b73ff56e2cc957a18be436d7d8bce9b2aa52",
+    "oldEngineSha256": "b13dc8f370372b1485edee127af68df4bdbdc92c048a48e41cc58bebbf5f411c",
+    "currentEngineSha256": "07b2d2085bc48069d4e6cb1a6cc8c31cd76be283f7b0565771286a6840064773"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "DDVE 5,0 · DSVE 3,2 cm: VDF 118 mL · FE 65% · FS 36%",
+      "input": {
+        "ddve": 5,
+        "dsve": 3.2
+      },
+      "publicOutput": {
+        "id": "fracao-de-ejecao-teichholz",
+        "main": [
+          "65",
+          "%"
+        ],
+        "label": "Fração de ejeção (Teichholz)",
+        "raw": {
+          "edv": 118.24324324324324,
+          "esv": 40.96000000000001,
+          "ef": 65.35954285714286,
+          "fs": 36
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "edv": 118.24,
+          "ef": 65.4,
+          "fs": 36
+        },
+        "tol": 0.1
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "65",
+          "%"
+        ],
+        "label": "Fração de ejeção (Teichholz)",
+        "level": "low",
+        "verdict": "Fração de ejeção preservada",
+        "rows": [
+          [
+            "Volume diastólico final",
+            "118 mL"
+          ],
+          [
+            "Volume sistólico final",
+            "41 mL"
+          ],
+          [
+            "Volume sistólico",
+            "77 mL"
+          ],
+          [
+            "Fração de encurtamento",
+            "36%"
+          ]
+        ],
+        "raw": {
+          "edv": 118.24324324324324,
+          "esv": 40.96000000000001,
+          "ef": 65.35954285714286,
+          "fs": 36
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "DSVE maior que DDVE: recusa com aviso de erro",
+      "input": {
+        "ddve": 4,
+        "dsve": 4.5
+      },
+      "publicOutput": {
+        "error": "O diâmetro sistólico precisa ser menor que o diastólico.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "sourceExpected": {
+        "error": true
+      },
+      "state": "existing-rejection"
+    }
+  ]
+}
